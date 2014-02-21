@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB3CA53618B784750079964E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3CA53518B784750079964E /* Foundation.framework */; };
+		AB3CA53B18B784750079964E /* VRUIKitTools.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB3CA53A18B784750079964E /* VRUIKitTools.h */; };
+		AB3CA54418B784750079964E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3CA54318B784750079964E /* XCTest.framework */; };
+		AB3CA54518B784750079964E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3CA53518B784750079964E /* Foundation.framework */; };
+		AB3CA54718B784750079964E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3CA54618B784750079964E /* UIKit.framework */; };
+		AB3CA54A18B784750079964E /* libVRUIKitTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3CA53218B784750079964E /* libVRUIKitTools.a */; };
+		AB3CA55018B784750079964E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB3CA54E18B784750079964E /* InfoPlist.strings */; };
+		AB3CA55218B784750079964E /* VRUIKitToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3CA55118B784750079964E /* VRUIKitToolsTests.m */; };
+		AB3CA55D18B784880079964E /* UIColor+VRRGB255.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3CA55C18B784880079964E /* UIColor+VRRGB255.m */; };
+		AB3CA56518B788E80079964E /* UIButton+VRCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3CA56418B788E80079964E /* UIButton+VRCopy.m */; };
+		AB3CA56918B789B40079964E /* VRAlertViewWithBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3CA56818B789B40079964E /* VRAlertViewWithBlock.m */; };
+		AB3CA56F18B78C020079964E /* UIImage+VRDerivatives.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3CA56E18B78C020079964E /* UIImage+VRDerivatives.m */; };
+		AB3CA57218B78C970079964E /* VRGeometryTools.c in Sources */ = {isa = PBXBuildFile; fileRef = AB3CA57018B78C970079964E /* VRGeometryTools.c */; };
+		AB3CA57718B790210079964E /* UIStoryboardSegue+VRDeepDestination.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3CA57618B790210079964E /* UIStoryboardSegue+VRDeepDestination.m */; };
+		AB3CA57B18B790F50079964E /* UIView+VRFindFirstResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3CA57A18B790F50079964E /* UIView+VRFindFirstResponder.m */; };
+		AB3CA57F18B791DC0079964E /* UIViewController+VRShortcutsToAppDelegateAndBackButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3CA57E18B791DC0079964E /* UIViewController+VRShortcutsToAppDelegateAndBackButton.m */; };
+		AB3CA58318B795620079964E /* VRActionSheetWithBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3CA58218B795620079964E /* VRActionSheetWithBlock.m */; };
+		AB3CA59218B79A5C0079964E /* UIViewController+VRShortcutsToAppDelegateAndBackButton.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB3CA57D18B791DC0079964E /* UIViewController+VRShortcutsToAppDelegateAndBackButton.h */; };
+		AB3CA59318B79A5C0079964E /* UIView+VRFindFirstResponder.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB3CA57918B790F50079964E /* UIView+VRFindFirstResponder.h */; };
+		AB3CA59418B79A5C0079964E /* UIStoryboardSegue+VRDeepDestination.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB3CA57518B790210079964E /* UIStoryboardSegue+VRDeepDestination.h */; };
+		AB3CA59518B79A5C0079964E /* VRGeometryTools.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB3CA57118B78C970079964E /* VRGeometryTools.h */; };
+		AB3CA59618B79A5C0079964E /* UIImage+VRDerivatives.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB3CA56D18B78C020079964E /* UIImage+VRDerivatives.h */; };
+		AB3CA59718B79A5C0079964E /* VRAlertViewWithBlock.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB3CA56718B789B40079964E /* VRAlertViewWithBlock.h */; };
+		AB3CA59818B79A5C0079964E /* VRActionSheetWithBlock.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB3CA58118B795620079964E /* VRActionSheetWithBlock.h */; };
+		AB3CA59918B79A5C0079964E /* UIButton+VRCopy.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB3CA56318B788E80079964E /* UIButton+VRCopy.h */; };
+		AB3CA59A18B79A5C0079964E /* UIColor+VRRGB255.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB3CA55B18B784880079964E /* UIColor+VRRGB255.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AB3CA54818B784750079964E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB3CA52A18B784750079964E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB3CA53118B784750079964E;
+			remoteInfo = VRUIKitTools;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AB3CA53018B784750079964E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				AB3CA59218B79A5C0079964E /* UIViewController+VRShortcutsToAppDelegateAndBackButton.h in CopyFiles */,
+				AB3CA59318B79A5C0079964E /* UIView+VRFindFirstResponder.h in CopyFiles */,
+				AB3CA59418B79A5C0079964E /* UIStoryboardSegue+VRDeepDestination.h in CopyFiles */,
+				AB3CA59518B79A5C0079964E /* VRGeometryTools.h in CopyFiles */,
+				AB3CA59618B79A5C0079964E /* UIImage+VRDerivatives.h in CopyFiles */,
+				AB3CA59718B79A5C0079964E /* VRAlertViewWithBlock.h in CopyFiles */,
+				AB3CA59818B79A5C0079964E /* VRActionSheetWithBlock.h in CopyFiles */,
+				AB3CA59918B79A5C0079964E /* UIButton+VRCopy.h in CopyFiles */,
+				AB3CA59A18B79A5C0079964E /* UIColor+VRRGB255.h in CopyFiles */,
+				AB3CA53B18B784750079964E /* VRUIKitTools.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AB3CA53218B784750079964E /* libVRUIKitTools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libVRUIKitTools.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB3CA53518B784750079964E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AB3CA53918B784750079964E /* VRUIKitTools-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VRUIKitTools-Prefix.pch"; sourceTree = "<group>"; };
+		AB3CA53A18B784750079964E /* VRUIKitTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VRUIKitTools.h; sourceTree = "<group>"; };
+		AB3CA54218B784750079964E /* VRUIKitToolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VRUIKitToolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB3CA54318B784750079964E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AB3CA54618B784750079964E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		AB3CA54D18B784750079964E /* VRUIKitToolsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VRUIKitToolsTests-Info.plist"; sourceTree = "<group>"; };
+		AB3CA54F18B784750079964E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AB3CA55118B784750079964E /* VRUIKitToolsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VRUIKitToolsTests.m; sourceTree = "<group>"; };
+		AB3CA55B18B784880079964E /* UIColor+VRRGB255.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+VRRGB255.h"; sourceTree = "<group>"; };
+		AB3CA55C18B784880079964E /* UIColor+VRRGB255.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+VRRGB255.m"; sourceTree = "<group>"; };
+		AB3CA56318B788E80079964E /* UIButton+VRCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+VRCopy.h"; sourceTree = "<group>"; };
+		AB3CA56418B788E80079964E /* UIButton+VRCopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+VRCopy.m"; sourceTree = "<group>"; };
+		AB3CA56718B789B40079964E /* VRAlertViewWithBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRAlertViewWithBlock.h; sourceTree = "<group>"; };
+		AB3CA56818B789B40079964E /* VRAlertViewWithBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRAlertViewWithBlock.m; sourceTree = "<group>"; };
+		AB3CA56D18B78C020079964E /* UIImage+VRDerivatives.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+VRDerivatives.h"; sourceTree = "<group>"; };
+		AB3CA56E18B78C020079964E /* UIImage+VRDerivatives.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+VRDerivatives.m"; sourceTree = "<group>"; };
+		AB3CA57018B78C970079964E /* VRGeometryTools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = VRGeometryTools.c; sourceTree = "<group>"; };
+		AB3CA57118B78C970079964E /* VRGeometryTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRGeometryTools.h; sourceTree = "<group>"; };
+		AB3CA57518B790210079964E /* UIStoryboardSegue+VRDeepDestination.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboardSegue+VRDeepDestination.h"; sourceTree = "<group>"; };
+		AB3CA57618B790210079964E /* UIStoryboardSegue+VRDeepDestination.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboardSegue+VRDeepDestination.m"; sourceTree = "<group>"; };
+		AB3CA57918B790F50079964E /* UIView+VRFindFirstResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VRFindFirstResponder.h"; sourceTree = "<group>"; };
+		AB3CA57A18B790F50079964E /* UIView+VRFindFirstResponder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VRFindFirstResponder.m"; sourceTree = "<group>"; };
+		AB3CA57D18B791DC0079964E /* UIViewController+VRShortcutsToAppDelegateAndBackButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+VRShortcutsToAppDelegateAndBackButton.h"; sourceTree = "<group>"; };
+		AB3CA57E18B791DC0079964E /* UIViewController+VRShortcutsToAppDelegateAndBackButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+VRShortcutsToAppDelegateAndBackButton.m"; sourceTree = "<group>"; };
+		AB3CA58118B795620079964E /* VRActionSheetWithBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRActionSheetWithBlock.h; sourceTree = "<group>"; };
+		AB3CA58218B795620079964E /* VRActionSheetWithBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRActionSheetWithBlock.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB3CA52F18B784750079964E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB3CA53618B784750079964E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB3CA53F18B784750079964E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB3CA54418B784750079964E /* XCTest.framework in Frameworks */,
+				AB3CA54718B784750079964E /* UIKit.framework in Frameworks */,
+				AB3CA54A18B784750079964E /* libVRUIKitTools.a in Frameworks */,
+				AB3CA54518B784750079964E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB3CA52918B784750079964E = {
+			isa = PBXGroup;
+			children = (
+				AB3CA53718B784750079964E /* VRUIKitTools */,
+				AB3CA54B18B784750079964E /* VRUIKitToolsTests */,
+				AB3CA53418B784750079964E /* Frameworks */,
+				AB3CA53318B784750079964E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AB3CA53318B784750079964E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB3CA53218B784750079964E /* libVRUIKitTools.a */,
+				AB3CA54218B784750079964E /* VRUIKitToolsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB3CA53418B784750079964E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB3CA53518B784750079964E /* Foundation.framework */,
+				AB3CA54318B784750079964E /* XCTest.framework */,
+				AB3CA54618B784750079964E /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB3CA53718B784750079964E /* VRUIKitTools */ = {
+			isa = PBXGroup;
+			children = (
+				AB3CA53A18B784750079964E /* VRUIKitTools.h */,
+				AB3CA58918B797300079964E /* Classes & Categories */,
+				AB3CA53818B784750079964E /* Supporting Files */,
+			);
+			path = VRUIKitTools;
+			sourceTree = "<group>";
+		};
+		AB3CA53818B784750079964E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB3CA53918B784750079964E /* VRUIKitTools-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AB3CA54B18B784750079964E /* VRUIKitToolsTests */ = {
+			isa = PBXGroup;
+			children = (
+				AB3CA55118B784750079964E /* VRUIKitToolsTests.m */,
+				AB3CA54C18B784750079964E /* Supporting Files */,
+			);
+			path = VRUIKitToolsTests;
+			sourceTree = "<group>";
+		};
+		AB3CA54C18B784750079964E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB3CA54D18B784750079964E /* VRUIKitToolsTests-Info.plist */,
+				AB3CA54E18B784750079964E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AB3CA55E18B7849D0079964E /* UIColor+VRRGB255 */ = {
+			isa = PBXGroup;
+			children = (
+				AB3CA55B18B784880079964E /* UIColor+VRRGB255.h */,
+				AB3CA55C18B784880079964E /* UIColor+VRRGB255.m */,
+			);
+			name = "UIColor+VRRGB255";
+			sourceTree = "<group>";
+		};
+		AB3CA56618B789120079964E /* UIButton+VRCopy */ = {
+			isa = PBXGroup;
+			children = (
+				AB3CA56318B788E80079964E /* UIButton+VRCopy.h */,
+				AB3CA56418B788E80079964E /* UIButton+VRCopy.m */,
+			);
+			name = "UIButton+VRCopy";
+			sourceTree = "<group>";
+		};
+		AB3CA56A18B789CB0079964E /* VRAlertViewWithBlock */ = {
+			isa = PBXGroup;
+			children = (
+				AB3CA56718B789B40079964E /* VRAlertViewWithBlock.h */,
+				AB3CA56818B789B40079964E /* VRAlertViewWithBlock.m */,
+			);
+			name = VRAlertViewWithBlock;
+			sourceTree = "<group>";
+		};
+		AB3CA57318B78CC50079964E /* VRGeometryTools */ = {
+			isa = PBXGroup;
+			children = (
+				AB3CA57118B78C970079964E /* VRGeometryTools.h */,
+				AB3CA57018B78C970079964E /* VRGeometryTools.c */,
+			);
+			name = VRGeometryTools;
+			sourceTree = "<group>";
+		};
+		AB3CA57418B78E340079964E /* UIImage+VRDerivatives */ = {
+			isa = PBXGroup;
+			children = (
+				AB3CA56D18B78C020079964E /* UIImage+VRDerivatives.h */,
+				AB3CA56E18B78C020079964E /* UIImage+VRDerivatives.m */,
+			);
+			name = "UIImage+VRDerivatives";
+			sourceTree = "<group>";
+		};
+		AB3CA57818B790A40079964E /* UIStoryboardSegue+VRDeepDestination */ = {
+			isa = PBXGroup;
+			children = (
+				AB3CA57518B790210079964E /* UIStoryboardSegue+VRDeepDestination.h */,
+				AB3CA57618B790210079964E /* UIStoryboardSegue+VRDeepDestination.m */,
+			);
+			name = "UIStoryboardSegue+VRDeepDestination";
+			sourceTree = "<group>";
+		};
+		AB3CA57C18B7917C0079964E /* UIView+FindFirstResponder */ = {
+			isa = PBXGroup;
+			children = (
+				AB3CA57918B790F50079964E /* UIView+VRFindFirstResponder.h */,
+				AB3CA57A18B790F50079964E /* UIView+VRFindFirstResponder.m */,
+			);
+			name = "UIView+FindFirstResponder";
+			sourceTree = "<group>";
+		};
+		AB3CA58018B794DD0079964E /* UIViewController+VRShortcutsToAppDelegateAndBackButton */ = {
+			isa = PBXGroup;
+			children = (
+				AB3CA57D18B791DC0079964E /* UIViewController+VRShortcutsToAppDelegateAndBackButton.h */,
+				AB3CA57E18B791DC0079964E /* UIViewController+VRShortcutsToAppDelegateAndBackButton.m */,
+			);
+			name = "UIViewController+VRShortcutsToAppDelegateAndBackButton";
+			sourceTree = "<group>";
+		};
+		AB3CA58418B7957A0079964E /* VRActionSheetWithBlock */ = {
+			isa = PBXGroup;
+			children = (
+				AB3CA58118B795620079964E /* VRActionSheetWithBlock.h */,
+				AB3CA58218B795620079964E /* VRActionSheetWithBlock.m */,
+			);
+			name = VRActionSheetWithBlock;
+			sourceTree = "<group>";
+		};
+		AB3CA58918B797300079964E /* Classes & Categories */ = {
+			isa = PBXGroup;
+			children = (
+				AB3CA58018B794DD0079964E /* UIViewController+VRShortcutsToAppDelegateAndBackButton */,
+				AB3CA57C18B7917C0079964E /* UIView+FindFirstResponder */,
+				AB3CA57818B790A40079964E /* UIStoryboardSegue+VRDeepDestination */,
+				AB3CA57318B78CC50079964E /* VRGeometryTools */,
+				AB3CA57418B78E340079964E /* UIImage+VRDerivatives */,
+				AB3CA56A18B789CB0079964E /* VRAlertViewWithBlock */,
+				AB3CA58418B7957A0079964E /* VRActionSheetWithBlock */,
+				AB3CA56618B789120079964E /* UIButton+VRCopy */,
+				AB3CA55E18B7849D0079964E /* UIColor+VRRGB255 */,
+			);
+			name = "Classes & Categories";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB3CA53118B784750079964E /* VRUIKitTools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB3CA55518B784750079964E /* Build configuration list for PBXNativeTarget "VRUIKitTools" */;
+			buildPhases = (
+				AB3CA52E18B784750079964E /* Sources */,
+				AB3CA52F18B784750079964E /* Frameworks */,
+				AB3CA53018B784750079964E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VRUIKitTools;
+			productName = VRUIKitTools;
+			productReference = AB3CA53218B784750079964E /* libVRUIKitTools.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AB3CA54118B784750079964E /* VRUIKitToolsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB3CA55818B784750079964E /* Build configuration list for PBXNativeTarget "VRUIKitToolsTests" */;
+			buildPhases = (
+				AB3CA53E18B784750079964E /* Sources */,
+				AB3CA53F18B784750079964E /* Frameworks */,
+				AB3CA54018B784750079964E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB3CA54918B784750079964E /* PBXTargetDependency */,
+			);
+			name = VRUIKitToolsTests;
+			productName = VRUIKitToolsTests;
+			productReference = AB3CA54218B784750079964E /* VRUIKitToolsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB3CA52A18B784750079964E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Ivan Rublev http://ivanrublev.me";
+			};
+			buildConfigurationList = AB3CA52D18B784750079964E /* Build configuration list for PBXProject "VRUIKitTools" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AB3CA52918B784750079964E;
+			productRefGroup = AB3CA53318B784750079964E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB3CA53118B784750079964E /* VRUIKitTools */,
+				AB3CA54118B784750079964E /* VRUIKitToolsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB3CA54018B784750079964E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB3CA55018B784750079964E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB3CA52E18B784750079964E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB3CA56F18B78C020079964E /* UIImage+VRDerivatives.m in Sources */,
+				AB3CA57B18B790F50079964E /* UIView+VRFindFirstResponder.m in Sources */,
+				AB3CA58318B795620079964E /* VRActionSheetWithBlock.m in Sources */,
+				AB3CA57218B78C970079964E /* VRGeometryTools.c in Sources */,
+				AB3CA56918B789B40079964E /* VRAlertViewWithBlock.m in Sources */,
+				AB3CA57718B790210079964E /* UIStoryboardSegue+VRDeepDestination.m in Sources */,
+				AB3CA56518B788E80079964E /* UIButton+VRCopy.m in Sources */,
+				AB3CA55D18B784880079964E /* UIColor+VRRGB255.m in Sources */,
+				AB3CA57F18B791DC0079964E /* UIViewController+VRShortcutsToAppDelegateAndBackButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB3CA53E18B784750079964E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB3CA55218B784750079964E /* VRUIKitToolsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AB3CA54918B784750079964E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB3CA53118B784750079964E /* VRUIKitTools */;
+			targetProxy = AB3CA54818B784750079964E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AB3CA54E18B784750079964E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB3CA54F18B784750079964E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AB3CA55318B784750079964E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos6.0;
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Debug;
+		};
+		AB3CA55418B784750079964E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos6.0;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Release;
+		};
+		AB3CA55618B784750079964E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/VRUIKitTools.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VRUIKitTools/VRUIKitTools-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AB3CA55718B784750079964E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/VRUIKitTools.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VRUIKitTools/VRUIKitTools-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		AB3CA55918B784750079964E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VRUIKitTools/VRUIKitTools-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "VRUIKitToolsTests/VRUIKitToolsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		AB3CA55A18B784750079964E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VRUIKitTools/VRUIKitTools-Prefix.pch";
+				INFOPLIST_FILE = "VRUIKitToolsTests/VRUIKitToolsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB3CA52D18B784750079964E /* Build configuration list for PBXProject "VRUIKitTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB3CA55318B784750079964E /* Debug */,
+				AB3CA55418B784750079964E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB3CA55518B784750079964E /* Build configuration list for PBXNativeTarget "VRUIKitTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB3CA55618B784750079964E /* Debug */,
+				AB3CA55718B784750079964E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB3CA55818B784750079964E /* Build configuration list for PBXNativeTarget "VRUIKitToolsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB3CA55918B784750079964E /* Debug */,
+				AB3CA55A18B784750079964E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB3CA52A18B784750079964E /* Project object */;
+}
