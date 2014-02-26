@@ -59,3 +59,8 @@ Functions are included
 #### VRGeometryTools.h
 
 Several functions to calculate and produce CGRect, CGPoint and CGSize.
+
+License
+-------
+
+MIT. Copyright (c) 2013 Ivan Rublev, ivan@ivanrublev.me 
