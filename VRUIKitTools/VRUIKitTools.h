@@ -17,7 +17,7 @@
 #import "VRAlertViewWithBlock.h"
 #import "UIImage+VRDerivatives.h"
 #import "UIStoryboardSegue+VRDeepDestination.h"
-#import "UIView+FindFirstResponder.h"
+#import "UIView+VRFindFirstResponder.h"
 
 #import "VRImageTiledView.h"
 #import "VRInsetedBgImageButton.h"
