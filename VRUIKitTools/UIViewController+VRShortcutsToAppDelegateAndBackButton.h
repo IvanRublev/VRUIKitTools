@@ -8,14 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-/* Please define VRAppDelegateClassName with class name of your current app delegate before including this header. To enable it.
+/* Please define VRAppDelegateClassName with class name of your current app delegate then include this header.
  */
 
-#ifdef VRAppDelegateClassName
+#ifndef VRAppDelegateClassName
+#define VRAppDelegateClassName NSObject
+#endif
 
 @interface UIViewController (VRShortcutsToAppDelegateAndBackButton)
 - (VRAppDelegateClassName *)appDelegate;
 - (UIBarButtonItem *)backButtonOfLowerViewController;
 @end
-
-#endif
