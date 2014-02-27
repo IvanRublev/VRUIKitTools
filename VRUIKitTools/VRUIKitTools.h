@@ -18,3 +18,6 @@
 #import "UIImage+VRDerivatives.h"
 #import "UIStoryboardSegue+VRDeepDestination.h"
 #import "UIView+FindFirstResponder.h"
+
+#import "VRImageTiledView.h"
+#import "VRInsetedBgImageButton.h"

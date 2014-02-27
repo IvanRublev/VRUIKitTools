@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB0A046118BEEFC300A377B4 /* VRImageTiledView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0A046018BEEFC300A377B4 /* VRImageTiledView.m */; };
+		AB0A046618BEF1CD00A377B4 /* VRInsetedBgImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0A046518BEF1CD00A377B4 /* VRInsetedBgImageButton.m */; };
 		AB3CA53618B784750079964E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3CA53518B784750079964E /* Foundation.framework */; };
 		AB3CA53B18B784750079964E /* VRUIKitTools.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB3CA53A18B784750079964E /* VRUIKitTools.h */; };
 		AB3CA54418B784750079964E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3CA54318B784750079964E /* XCTest.framework */; };
@@ -68,6 +70,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AB0A045F18BEEFC300A377B4 /* VRImageTiledView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRImageTiledView.h; sourceTree = "<group>"; };
+		AB0A046018BEEFC300A377B4 /* VRImageTiledView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRImageTiledView.m; sourceTree = "<group>"; };
+		AB0A046418BEF1CD00A377B4 /* VRInsetedBgImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRInsetedBgImageButton.h; sourceTree = "<group>"; };
+		AB0A046518BEF1CD00A377B4 /* VRInsetedBgImageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRInsetedBgImageButton.m; sourceTree = "<group>"; };
 		AB3CA53218B784750079964E /* libVRUIKitTools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libVRUIKitTools.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB3CA53518B784750079964E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AB3CA53918B784750079964E /* VRUIKitTools-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VRUIKitTools-Prefix.pch"; sourceTree = "<group>"; };
@@ -121,6 +127,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB0A046218BEF11300A377B4 /* VRImageTiledView */ = {
+			isa = PBXGroup;
+			children = (
+				AB0A045F18BEEFC300A377B4 /* VRImageTiledView.h */,
+				AB0A046018BEEFC300A377B4 /* VRImageTiledView.m */,
+			);
+			name = VRImageTiledView;
+			sourceTree = "<group>";
+		};
+		AB0A046318BEF11900A377B4 /* Classes configurable via IB */ = {
+			isa = PBXGroup;
+			children = (
+				AB0A046218BEF11300A377B4 /* VRImageTiledView */,
+				AB0A046718BEF2B000A377B4 /* VRInsetedBgImageButton */,
+			);
+			name = "Classes configurable via IB";
+			sourceTree = "<group>";
+		};
+		AB0A046718BEF2B000A377B4 /* VRInsetedBgImageButton */ = {
+			isa = PBXGroup;
+			children = (
+				AB0A046418BEF1CD00A377B4 /* VRInsetedBgImageButton.h */,
+				AB0A046518BEF1CD00A377B4 /* VRInsetedBgImageButton.m */,
+			);
+			name = VRInsetedBgImageButton;
+			sourceTree = "<group>";
+		};
 		AB3CA52918B784750079964E = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				AB3CA53A18B784750079964E /* VRUIKitTools.h */,
+				AB0A046318BEF11900A377B4 /* Classes configurable via IB */,
 				AB3CA58918B797300079964E /* Classes & Categories */,
 				AB3CA53818B784750079964E /* Supporting Files */,
 			);
@@ -371,7 +405,9 @@
 				AB3CA56918B789B40079964E /* VRAlertViewWithBlock.m in Sources */,
 				AB3CA57718B790210079964E /* UIStoryboardSegue+VRDeepDestination.m in Sources */,
 				AB3CA56518B788E80079964E /* UIButton+VRCopy.m in Sources */,
+				AB0A046618BEF1CD00A377B4 /* VRInsetedBgImageButton.m in Sources */,
 				AB3CA55D18B784880079964E /* UIColor+VRRGB255.m in Sources */,
+				AB0A046118BEEFC300A377B4 /* VRImageTiledView.m in Sources */,
 				AB3CA57F18B791DC0079964E /* UIViewController+VRShortcutsToAppDelegateAndBackButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

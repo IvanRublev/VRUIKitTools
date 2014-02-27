@@ -18,8 +18,20 @@ git subtree add --prefix=Somewhere/VRUIKitTools --squash https://github.com/Ivan
 
 Now it's ready to use!
 
-Categories are included
------------------------
+Classes to use in Interface Builder
+-----------------------------------
+
+#### VRImageTiledView
+
+Fills background of itself with specified image tiled.
+
+##### VRInsetedBgImageButton
+
+Replaces background image for Normal state with derived image inseted according to insetsRect property.
+
+
+Categories and classes to use in code
+-------------------------------------
 
 #### UIViewController+VRShortcutsToAppDelegateAndBackButton
 
