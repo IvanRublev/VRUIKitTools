@@ -8,6 +8,8 @@
 
 #import "UIViewController+VRShortcutsToAppDelegateAndBackButton.h"
 
+#ifdef VRAppDelegateClassName
+
 @implementation UIViewController (VRShortcutsToAppDelegateAndBackButton)
 
 - (VRAppDelegateClassName *)appDelegate
@@ -24,3 +26,5 @@
 }
 
 @end
+
+#endif

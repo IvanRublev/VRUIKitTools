@@ -9,8 +9,17 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-#import "VRGeometryTools.h"
+/* To enable the shortcut to app delegate UIViewController category you must do following in YourProject-Prefix.pch
+ * #import YourAppDelegate.h
+ * #define VRAppDelegateClassName YourAppDelegate
+ * #import VRUIKitTools.h or #import UIViewController+VRShortcutsToAppDelegateAndBackButton.h
+ * #import YourViewController.h
+ * ...
+ *
+ */
 #import "UIViewController+VRShortcutsToAppDelegateAndBackButton.h"
+
+#import "VRGeometryTools.h"
 #import "UIColor+VRRGB255.h"
 #import "UIButton+VRCopy.h"
 #import "VRActionSheetWithBlock.h"
