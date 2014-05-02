@@ -24,7 +24,6 @@
 		AB3CA57218B78C970079964E /* VRGeometryTools.c in Sources */ = {isa = PBXBuildFile; fileRef = AB3CA57018B78C970079964E /* VRGeometryTools.c */; };
 		AB3CA57718B790210079964E /* UIStoryboardSegue+VRDeepDestination.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3CA57618B790210079964E /* UIStoryboardSegue+VRDeepDestination.m */; };
 		AB3CA57B18B790F50079964E /* UIView+VRFindFirstResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3CA57A18B790F50079964E /* UIView+VRFindFirstResponder.m */; };
-		AB3CA57F18B791DC0079964E /* UIViewController+VRShortcutsToAppDelegateAndBackButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3CA57E18B791DC0079964E /* UIViewController+VRShortcutsToAppDelegateAndBackButton.m */; };
 		AB3CA58318B795620079964E /* VRActionSheetWithBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3CA58218B795620079964E /* VRActionSheetWithBlock.m */; };
 		AB3CA59218B79A5C0079964E /* UIViewController+VRShortcutsToAppDelegateAndBackButton.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB3CA57D18B791DC0079964E /* UIViewController+VRShortcutsToAppDelegateAndBackButton.h */; };
 		AB3CA59318B79A5C0079964E /* UIView+VRFindFirstResponder.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB3CA57918B790F50079964E /* UIView+VRFindFirstResponder.h */; };
@@ -408,7 +407,6 @@
 				AB0A046618BEF1CD00A377B4 /* VRInsetedBgImageButton.m in Sources */,
 				AB3CA55D18B784880079964E /* UIColor+VRRGB255.m in Sources */,
 				AB0A046118BEEFC300A377B4 /* VRImageTiledView.m in Sources */,
-				AB3CA57F18B791DC0079964E /* UIViewController+VRShortcutsToAppDelegateAndBackButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
