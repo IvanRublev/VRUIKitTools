@@ -10,4 +10,5 @@
 
 @interface UIStoryboardSegue (VRDeepDestination)
 - (id)deepDestinationViewController;
+- (id)deepSourceViewController;
 @end

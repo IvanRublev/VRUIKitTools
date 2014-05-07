@@ -9,11 +9,23 @@
 #import "UIStoryboardSegue+VRDeepDestination.h"
 
 @implementation UIStoryboardSegue (VRDeepDestination)
+
 - (id)deepDestinationViewController
 {
-    if (self.destinationViewController && [self.destinationViewController isKindOfClass:[UINavigationController class]]) {
-        return ((UINavigationController *)self.destinationViewController).topViewController;
-    }
-    return self.destinationViewController;
+    return [self deepViewController:self.destinationViewController];
 }
+
+- (id)deepSourceViewController
+{
+    return [self deepViewController:self.sourceViewController];
+}
+
+- (id)deepViewController:(UIViewController *)viewController
+{
+    if (viewController && [viewController isKindOfClass:[UINavigationController class]]) {
+        return ((UINavigationController *)viewController).topViewController;
+    }
+    return viewController;
+}
+
 @end
