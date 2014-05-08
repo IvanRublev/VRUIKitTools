@@ -54,7 +54,6 @@
 {
     objc_setAssociatedObject(self, VRNavigationControllerWithBlockWillShowName, nil, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     objc_setAssociatedObject(self, VRNavigationControllerWithBlockDidShowName, nil, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-    NSLog(@"vrnavcwithblock=E=");
 }
 
 #pragma mark -
@@ -64,7 +63,7 @@
     if ([navigationController isKindOfClass:[VRNavigationControllerWithBlock class]]) {
         VRNavigationControllerViewControllerShowBlock block = [self viewControllerWillShowBlock];
         if (block) {
-            block(navigationController, viewController, animated);
+            block((VRNavigationControllerWithBlock *)navigationController, viewController, animated);
         }
     }
 }
@@ -74,7 +73,7 @@
     if ([navigationController isKindOfClass:[VRNavigationControllerWithBlock class]]) {
         VRNavigationControllerViewControllerShowBlock block = [self viewControllerDidShowBlock];
         if (block) {
-            block(navigationController, viewController, animated);
+            block((VRNavigationControllerWithBlock *)navigationController, viewController, animated);
         }
     }
 }
