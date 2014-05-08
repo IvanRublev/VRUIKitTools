@@ -34,6 +34,7 @@
 		AB3CA59818B79A5C0079964E /* VRActionSheetWithBlock.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB3CA58118B795620079964E /* VRActionSheetWithBlock.h */; };
 		AB3CA59918B79A5C0079964E /* UIButton+VRCopy.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB3CA56318B788E80079964E /* UIButton+VRCopy.h */; };
 		AB3CA59A18B79A5C0079964E /* UIColor+VRRGB255.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB3CA55B18B784880079964E /* UIColor+VRRGB255.h */; };
+		ABFF48EB191B6DF100EE8A04 /* VRNavigationControllerWithBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFF48EA191B6DF100EE8A04 /* VRNavigationControllerWithBlock.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,8 @@
 		AB3CA57E18B791DC0079964E /* UIViewController+VRShortcutsToAppDelegateAndBackButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+VRShortcutsToAppDelegateAndBackButton.m"; sourceTree = "<group>"; };
 		AB3CA58118B795620079964E /* VRActionSheetWithBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRActionSheetWithBlock.h; sourceTree = "<group>"; };
 		AB3CA58218B795620079964E /* VRActionSheetWithBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRActionSheetWithBlock.m; sourceTree = "<group>"; };
+		ABFF48E9191B6DF100EE8A04 /* VRNavigationControllerWithBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRNavigationControllerWithBlock.h; sourceTree = "<group>"; };
+		ABFF48EA191B6DF100EE8A04 /* VRNavigationControllerWithBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRNavigationControllerWithBlock.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -310,10 +313,20 @@
 				AB3CA57418B78E340079964E /* UIImage+VRDerivatives */,
 				AB3CA56A18B789CB0079964E /* VRAlertViewWithBlock */,
 				AB3CA58418B7957A0079964E /* VRActionSheetWithBlock */,
+				ABFF48EC191B6E0D00EE8A04 /* VRNavigationControllerWithBlock */,
 				AB3CA56618B789120079964E /* UIButton+VRCopy */,
 				AB3CA55E18B7849D0079964E /* UIColor+VRRGB255 */,
 			);
 			name = "Classes & Categories";
+			sourceTree = "<group>";
+		};
+		ABFF48EC191B6E0D00EE8A04 /* VRNavigationControllerWithBlock */ = {
+			isa = PBXGroup;
+			children = (
+				ABFF48E9191B6DF100EE8A04 /* VRNavigationControllerWithBlock.h */,
+				ABFF48EA191B6DF100EE8A04 /* VRNavigationControllerWithBlock.m */,
+			);
+			name = VRNavigationControllerWithBlock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -400,6 +413,7 @@
 				AB3CA56F18B78C020079964E /* UIImage+VRDerivatives.m in Sources */,
 				AB3CA57B18B790F50079964E /* UIView+VRFindFirstResponder.m in Sources */,
 				AB3CA58318B795620079964E /* VRActionSheetWithBlock.m in Sources */,
+				ABFF48EB191B6DF100EE8A04 /* VRNavigationControllerWithBlock.m in Sources */,
 				AB3CA57218B78C970079964E /* VRGeometryTools.c in Sources */,
 				AB3CA56918B789B40079964E /* VRAlertViewWithBlock.m in Sources */,
 				AB3CA57718B790210079964E /* UIStoryboardSegue+VRDeepDestination.m in Sources */,

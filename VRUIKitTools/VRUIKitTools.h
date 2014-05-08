@@ -25,6 +25,7 @@
 #import "UIButton+VRCopy.h"
 #import "VRActionSheetWithBlock.h"
 #import "VRAlertViewWithBlock.h"
+#import "VRNavigationControllerWithBlock.h"
 #import "UIImage+VRDerivatives.h"
 #import "UIStoryboardSegue+VRDeepDestination.h"
 #import "UIView+VRFindFirstResponder.h"
