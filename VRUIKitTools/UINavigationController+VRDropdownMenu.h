@@ -18,6 +18,7 @@ typedef NSArray * (^VRDropdownMenuViewMakeAdditionalConstraintsBlock)(UIView * v
 @interface UINavigationController (VRDropdownMenu)
 
 - (void)showVRDropdownMenuViewController:(UIViewController *)viewController animated:(BOOL)animated;
+- (BOOL)isVRDropdownMenuVisible;
 - (void)hideVRDropdownMenuAnimated:(BOOL)animated;
 
 - (void)showVRDropdownMenuViewController:(UIViewController *)viewController

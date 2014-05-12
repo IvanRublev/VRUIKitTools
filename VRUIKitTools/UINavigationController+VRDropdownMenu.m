@@ -86,6 +86,11 @@
 	}
 }
 
+- (BOOL)isVRDropdownMenuVisible
+{
+    return (objc_getAssociatedObject(self, kcVRDropdownMenuDictionary) != nil);
+}
+
 - (void)hideVRDropdownMenuAnimated:(BOOL)animated
 {
     NSDictionary * dictionary = objc_getAssociatedObject(self, kcVRDropdownMenuDictionary);
