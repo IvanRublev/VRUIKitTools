@@ -22,6 +22,7 @@
 
 #import "VRGeometryTools.h"
 #import "UIColor+VRRGB255.h"
+#import "NSLayoutConstraint+VRTools.h"
 #import "UIButton+VRCopy.h"
 #import "VRActionSheetWithBlock.h"
 #import "VRAlertViewWithBlock.h"
@@ -29,6 +30,7 @@
 #import "UIImage+VRDerivatives.h"
 #import "UIStoryboardSegue+VRDeepDestination.h"
 #import "UIView+VRFindFirstResponder.h"
+#import "UINavigationController+VRDropdownMenu.h"
 
 #import "VRImageTiledView.h"
 #import "VRInsetedBgImageButton.h"
