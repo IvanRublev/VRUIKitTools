@@ -79,3 +79,29 @@ CGPoint CGPointCenterOfRect(CGRect rect)
 {
     return CGPointMake(rect.origin.x + rect.size.width / 2.0f, rect.origin.y + rect.size.height / 2.0f);
 }
+
+bool CGLineIntersectsLine(CGPoint line1s, CGPoint line1e, CGPoint line2s, CGPoint line2e)
+{
+    CGPoint dir1 = CGPointMake(line1e.x - line1s.x, line1e.y - line1s.y);
+    CGPoint dir2 = CGPointMake(line2e.x - line2s.x, line2e.y - line2s.y);
+    
+    CGFloat a1 = - dir1.y;
+    CGFloat b1 = + dir1.x;
+    CGFloat d1 = -(a1*line1s.x + b1*line1s.y);
+    
+    CGFloat a2 = - dir2.y;
+    CGFloat b2 = + dir2.x;
+    CGFloat d2 = -(a2*line2s.x + b2*line2s.y);
+    
+    CGFloat seg1_line2_start = a2*line1s.x + b2*line1s.y + d2;
+    CGFloat seg1_line2_end = a2*line1e.x + b2*line1e.y + d2;
+    
+    CGFloat seg2_line1_start = a1*line2s.x + b1*line2s.y + d1;
+    CGFloat seg2_line1_end = a1*line2e.x + b1*line2e.y + d1;
+    
+    if (seg1_line2_start * seg1_line2_end >= 0 || seg2_line1_start * seg2_line1_end >= 0) {
+        return false;
+    }
+    
+    return true;
+}
