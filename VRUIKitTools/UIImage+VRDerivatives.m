@@ -331,7 +331,7 @@ void scaledImageReleaseCallocatedData (void *info, const void *data, size_t size
                           bitsPerComponent,
                           newSizeWidth * bytesPerPixel,
                           colorSpace,  
-                          kCGImageAlphaPremultipliedLast
+                          (uint32_t)kCGImageAlphaPremultipliedLast
                           );
    
     CGContextSetInterpolationQuality(imageContext, quality); 
@@ -351,7 +351,7 @@ void scaledImageReleaseCallocatedData (void *info, const void *data, size_t size
                   bitsPerPixel,
                   newSizeWidth * bytesPerPixel,
                   colorSpace,
-                  kCGImageAlphaPremultipliedLast,
+                  (uint32_t)kCGImageAlphaPremultipliedLast,
                   processedJoinedProvider, 
                   NULL,
                   true,
@@ -589,7 +589,7 @@ void scaledImageReleaseCallocatedData (void *info, const void *data, size_t size
                           bitsPerComponent,
                           newSizeWidth * bytesPerPixel,
                           colorSpace,
-                          kCGImageAlphaPremultipliedLast
+                          (uint32_t)kCGImageAlphaPremultipliedLast
                           );
     CGContextDrawImage(imageContext, CGRectMake(0.0, 0.0, newSizeWidth, newSizeHeight), srcCGImage);
     CGContextTranslateCTM (imageContext, 0.0, newSizeHeight);
@@ -626,7 +626,7 @@ void scaledImageReleaseCallocatedData (void *info, const void *data, size_t size
                   bitsPerPixel,
                   newSizeWidth * bytesPerPixel,
                   colorSpace,
-                  kCGImageAlphaPremultipliedLast,
+                  (uint32_t)kCGImageAlphaPremultipliedLast,
                   processedJoinedProvider,
                   NULL,
                   true,
@@ -697,7 +697,7 @@ void scaledImageReleaseCallocatedData (void *info, const void *data, size_t size
                           bitsPerComponent,
                           newSizeWidth * bytesPerPixel,
                           colorSpace,
-                          kCGImageAlphaPremultipliedLast
+                          (uint32_t)kCGImageAlphaPremultipliedLast
                           );
     CGContextDrawImage(imageContext, CGRectMake(0.0, 0.0, newSizeWidth, newSizeHeight), srcCGImage);
     CGContextTranslateCTM (imageContext, 0.0, newSizeHeight);
@@ -730,7 +730,7 @@ void scaledImageReleaseCallocatedData (void *info, const void *data, size_t size
                   bitsPerPixel,
                   newSizeWidth * bytesPerPixel,
                   colorSpace,
-                  kCGImageAlphaPremultipliedLast,
+                  (uint32_t)kCGImageAlphaPremultipliedLast,
                   processedJoinedProvider,
                   NULL,
                   true,
@@ -789,7 +789,7 @@ void scaledImageReleaseCallocatedData (void *info, const void *data, size_t size
                           bitsPerComponent,
                           newSizeWidth * bytesPerPixel,
                           colorSpace,
-                          kCGImageAlphaPremultipliedLast
+                          (uint32_t)kCGImageAlphaPremultipliedLast
                           );
     CGContextDrawImage(imageContext, CGRectMake(0.0, 0.0, newSizeWidth, newSizeHeight), srcCGImage);
     CGContextDrawImage(imageContext, CGRectMake(point.x, point.y, putImage.cgSize.width, putImage.cgSize.height), putImage.CGImage);
@@ -805,7 +805,7 @@ void scaledImageReleaseCallocatedData (void *info, const void *data, size_t size
                   bitsPerPixel,
                   newSizeWidth * bytesPerPixel,
                   colorSpace,
-                  kCGImageAlphaPremultipliedLast,
+                  (uint32_t)kCGImageAlphaPremultipliedLast,
                   processedJoinedProvider,
                   NULL,
                   true,

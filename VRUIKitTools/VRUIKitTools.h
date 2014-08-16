@@ -34,3 +34,4 @@
 
 #import "VRImageTiledView.h"
 #import "VRInsetedBgImageButton.h"
+#import "VRButtonsGroup.h"

@@ -40,6 +40,7 @@
 		AB3DC074192121BA0067DFD3 /* VRInsetedBgImageButton.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB0A046418BEF1CD00A377B4 /* VRInsetedBgImageButton.h */; };
 		AB3DC075192121BA0067DFD3 /* NSLayoutConstraint+VRTools.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB3DC06B192120AD0067DFD3 /* NSLayoutConstraint+VRTools.h */; };
 		AB3DC076192121BA0067DFD3 /* UINavigationController+VRDropdownMenu.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB3DC06E192120B80067DFD3 /* UINavigationController+VRDropdownMenu.h */; };
+		AB6DC98F199F533C00BF1BB1 /* VRButtonsGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = AB6DC98E199F533B00BF1BB1 /* VRButtonsGroup.m */; };
 		ABFF48EB191B6DF100EE8A04 /* VRNavigationControllerWithBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFF48EA191B6DF100EE8A04 /* VRNavigationControllerWithBlock.m */; };
 /* End PBXBuildFile section */
 
@@ -116,6 +117,8 @@
 		AB3DC06C192120AD0067DFD3 /* NSLayoutConstraint+VRTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+VRTools.m"; sourceTree = "<group>"; };
 		AB3DC06E192120B80067DFD3 /* UINavigationController+VRDropdownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+VRDropdownMenu.h"; sourceTree = "<group>"; };
 		AB3DC06F192120B80067DFD3 /* UINavigationController+VRDropdownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+VRDropdownMenu.m"; sourceTree = "<group>"; };
+		AB6DC98D199F533B00BF1BB1 /* VRButtonsGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRButtonsGroup.h; sourceTree = "<group>"; };
+		AB6DC98E199F533B00BF1BB1 /* VRButtonsGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRButtonsGroup.m; sourceTree = "<group>"; };
 		ABFF48E9191B6DF100EE8A04 /* VRNavigationControllerWithBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRNavigationControllerWithBlock.h; sourceTree = "<group>"; };
 		ABFF48EA191B6DF100EE8A04 /* VRNavigationControllerWithBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRNavigationControllerWithBlock.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,6 +158,7 @@
 		AB0A046318BEF11900A377B4 /* Classes configurable via IB */ = {
 			isa = PBXGroup;
 			children = (
+				AB6DC990199F534000BF1BB1 /* VRButtonGroup */,
 				AB0A046218BEF11300A377B4 /* VRImageTiledView */,
 				AB0A046718BEF2B000A377B4 /* VRInsetedBgImageButton */,
 			);
@@ -354,6 +358,15 @@
 			name = "NSLayoutConstraint+VRTools";
 			sourceTree = "<group>";
 		};
+		AB6DC990199F534000BF1BB1 /* VRButtonGroup */ = {
+			isa = PBXGroup;
+			children = (
+				AB6DC98D199F533B00BF1BB1 /* VRButtonsGroup.h */,
+				AB6DC98E199F533B00BF1BB1 /* VRButtonsGroup.m */,
+			);
+			name = VRButtonGroup;
+			sourceTree = "<group>";
+		};
 		ABFF48EC191B6E0D00EE8A04 /* VRNavigationControllerWithBlock */ = {
 			isa = PBXGroup;
 			children = (
@@ -455,6 +468,7 @@
 				AB3CA56518B788E80079964E /* UIButton+VRCopy.m in Sources */,
 				AB0A046618BEF1CD00A377B4 /* VRInsetedBgImageButton.m in Sources */,
 				AB3DC070192120B80067DFD3 /* UINavigationController+VRDropdownMenu.m in Sources */,
+				AB6DC98F199F533C00BF1BB1 /* VRButtonsGroup.m in Sources */,
 				AB3CA55D18B784880079964E /* UIColor+VRRGB255.m in Sources */,
 				AB0A046118BEEFC300A377B4 /* VRImageTiledView.m in Sources */,
 			);
