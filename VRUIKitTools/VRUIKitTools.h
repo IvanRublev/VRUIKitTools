@@ -36,3 +36,4 @@
 #import "VRInsetedBgImageButton.h"
 #import "VRButtonsGroup.h"
 #import "VRInsettedLabel.h"
+#import "VRNavigationBar.h"

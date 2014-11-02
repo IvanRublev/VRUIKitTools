@@ -49,7 +49,7 @@
     [menuView setTranslatesAutoresizingMaskIntoConstraints:NO];
     NSLayoutConstraint *topConstraint = nil;
     NSMutableArray * constraintsToMenuView = [NSMutableArray array];
-    [constraintsToMenuView addObjectsFromArray:[NSLayoutConstraint constraintsMakeView:menuView equalToView:menuBackgroundView priority:UILayoutPriorityDefaultHigh constraintToSlideFromTop:&topConstraint]];
+    [constraintsToMenuView addObjectsFromArray:[NSLayoutConstraint constraintsMakeView:menuView equalToView:menuBackgroundView priority:UILayoutPriorityDefaultHigh topConstraint:&topConstraint]];
     if (additionalConstraintsBlock) {
         NSArray * additionalConstraints = additionalConstraintsBlock(menuView);
         if (additionalConstraints) {
