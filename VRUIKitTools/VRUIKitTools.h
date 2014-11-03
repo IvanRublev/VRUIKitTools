@@ -37,3 +37,4 @@
 #import "VRButtonsGroup.h"
 #import "VRInsettedLabel.h"
 #import "VRNavigationBar.h"
+#import "VRSegmentedControlWithTags.h"
