@@ -27,6 +27,7 @@
     _customBackgroundView = [[UIView alloc] initWithFrame:self.bounds];
     _customBackgroundView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     _customBackgroundView.backgroundColor = [UIColor clearColor];
+    _customBackgroundView.userInteractionEnabled = NO;
     // We can't add constraints to navigation bar because it's restricted by SDK.
     // Add wraper custom background view and patternized view to it.
     _backgroundPatternView = [[UIView alloc] initWithFrame:self.bounds];
