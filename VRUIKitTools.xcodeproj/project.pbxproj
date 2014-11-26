@@ -25,7 +25,6 @@
 		AB3CA57718B790210079964E /* UIStoryboardSegue+VRDeepDestination.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3CA57618B790210079964E /* UIStoryboardSegue+VRDeepDestination.m */; };
 		AB3CA57B18B790F50079964E /* UIView+VRFindFirstResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3CA57A18B790F50079964E /* UIView+VRFindFirstResponder.m */; };
 		AB3CA58318B795620079964E /* VRActionSheetWithBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3CA58218B795620079964E /* VRActionSheetWithBlock.m */; };
-		AB3CA59218B79A5C0079964E /* UIViewController+VRShortcutsToAppDelegateAndBackButton.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB3CA57D18B791DC0079964E /* UIViewController+VRShortcutsToAppDelegateAndBackButton.h */; };
 		AB3CA59318B79A5C0079964E /* UIView+VRFindFirstResponder.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB3CA57918B790F50079964E /* UIView+VRFindFirstResponder.h */; };
 		AB3CA59418B79A5C0079964E /* UIStoryboardSegue+VRDeepDestination.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB3CA57518B790210079964E /* UIStoryboardSegue+VRDeepDestination.h */; };
 		AB3CA59518B79A5C0079964E /* VRGeometryTools.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB3CA57118B78C970079964E /* VRGeometryTools.h */; };
@@ -40,6 +39,7 @@
 		AB3DC074192121BA0067DFD3 /* VRInsetedBgImageButton.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB0A046418BEF1CD00A377B4 /* VRInsetedBgImageButton.h */; };
 		AB3DC075192121BA0067DFD3 /* NSLayoutConstraint+VRTools.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB3DC06B192120AD0067DFD3 /* NSLayoutConstraint+VRTools.h */; };
 		AB3DC076192121BA0067DFD3 /* UINavigationController+VRDropdownMenu.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB3DC06E192120B80067DFD3 /* UINavigationController+VRDropdownMenu.h */; };
+		AB5B604E1A25E9C2001F3C0C /* VRPlatformTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AB5B604D1A25E9C2001F3C0C /* VRPlatformTest.m */; };
 		AB6DC98F199F533C00BF1BB1 /* VRButtonsGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = AB6DC98E199F533B00BF1BB1 /* VRButtonsGroup.m */; };
 		AB71F4C11A0634540074AB6C /* VRNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = AB71F4C01A0634540074AB6C /* VRNavigationBar.m */; };
 		AB71F4C91A074CE10074AB6C /* VRSegmentedControlWithTags.m in Sources */ = {isa = PBXBuildFile; fileRef = AB71F4C81A074CE10074AB6C /* VRSegmentedControlWithTags.m */; };
@@ -68,7 +68,6 @@
 				AB3DC074192121BA0067DFD3 /* VRInsetedBgImageButton.h in CopyFiles */,
 				AB3DC075192121BA0067DFD3 /* NSLayoutConstraint+VRTools.h in CopyFiles */,
 				AB3DC076192121BA0067DFD3 /* UINavigationController+VRDropdownMenu.h in CopyFiles */,
-				AB3CA59218B79A5C0079964E /* UIViewController+VRShortcutsToAppDelegateAndBackButton.h in CopyFiles */,
 				AB3CA59318B79A5C0079964E /* UIView+VRFindFirstResponder.h in CopyFiles */,
 				AB3CA59418B79A5C0079964E /* UIStoryboardSegue+VRDeepDestination.h in CopyFiles */,
 				AB3CA59518B79A5C0079964E /* VRGeometryTools.h in CopyFiles */,
@@ -112,14 +111,14 @@
 		AB3CA57618B790210079964E /* UIStoryboardSegue+VRDeepDestination.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboardSegue+VRDeepDestination.m"; sourceTree = "<group>"; };
 		AB3CA57918B790F50079964E /* UIView+VRFindFirstResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VRFindFirstResponder.h"; sourceTree = "<group>"; };
 		AB3CA57A18B790F50079964E /* UIView+VRFindFirstResponder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VRFindFirstResponder.m"; sourceTree = "<group>"; };
-		AB3CA57D18B791DC0079964E /* UIViewController+VRShortcutsToAppDelegateAndBackButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+VRShortcutsToAppDelegateAndBackButton.h"; sourceTree = "<group>"; };
-		AB3CA57E18B791DC0079964E /* UIViewController+VRShortcutsToAppDelegateAndBackButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+VRShortcutsToAppDelegateAndBackButton.m"; sourceTree = "<group>"; };
 		AB3CA58118B795620079964E /* VRActionSheetWithBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRActionSheetWithBlock.h; sourceTree = "<group>"; };
 		AB3CA58218B795620079964E /* VRActionSheetWithBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRActionSheetWithBlock.m; sourceTree = "<group>"; };
 		AB3DC06B192120AD0067DFD3 /* NSLayoutConstraint+VRTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+VRTools.h"; sourceTree = "<group>"; };
 		AB3DC06C192120AD0067DFD3 /* NSLayoutConstraint+VRTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+VRTools.m"; sourceTree = "<group>"; };
 		AB3DC06E192120B80067DFD3 /* UINavigationController+VRDropdownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+VRDropdownMenu.h"; sourceTree = "<group>"; };
 		AB3DC06F192120B80067DFD3 /* UINavigationController+VRDropdownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+VRDropdownMenu.m"; sourceTree = "<group>"; };
+		AB5B604C1A25E846001F3C0C /* VRPlatform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VRPlatform.h; sourceTree = "<group>"; };
+		AB5B604D1A25E9C2001F3C0C /* VRPlatformTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRPlatformTest.m; sourceTree = "<group>"; };
 		AB6DC98D199F533B00BF1BB1 /* VRButtonsGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRButtonsGroup.h; sourceTree = "<group>"; };
 		AB6DC98E199F533B00BF1BB1 /* VRButtonsGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRButtonsGroup.m; sourceTree = "<group>"; };
 		AB71F4BF1A0634540074AB6C /* VRNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRNavigationBar.h; sourceTree = "<group>"; };
@@ -218,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				AB3CA53A18B784750079964E /* VRUIKitTools.h */,
+				AB5B604C1A25E846001F3C0C /* VRPlatform.h */,
 				AB0A046318BEF11900A377B4 /* Classes configurable via IB */,
 				AB3CA58918B797300079964E /* Classes & Categories */,
 				AB3CA53818B784750079964E /* Supporting Files */,
@@ -237,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				AB3CA55118B784750079964E /* VRUIKitToolsTests.m */,
+				AB5B604D1A25E9C2001F3C0C /* VRPlatformTest.m */,
 				AB3CA54C18B784750079964E /* Supporting Files */,
 			);
 			path = VRUIKitToolsTests;
@@ -314,15 +315,6 @@
 			name = "UIView+FindFirstResponder";
 			sourceTree = "<group>";
 		};
-		AB3CA58018B794DD0079964E /* UIViewController+VRShortcutsToAppDelegateAndBackButton */ = {
-			isa = PBXGroup;
-			children = (
-				AB3CA57D18B791DC0079964E /* UIViewController+VRShortcutsToAppDelegateAndBackButton.h */,
-				AB3CA57E18B791DC0079964E /* UIViewController+VRShortcutsToAppDelegateAndBackButton.m */,
-			);
-			name = "UIViewController+VRShortcutsToAppDelegateAndBackButton";
-			sourceTree = "<group>";
-		};
 		AB3CA58418B7957A0079964E /* VRActionSheetWithBlock */ = {
 			isa = PBXGroup;
 			children = (
@@ -338,7 +330,6 @@
 				AB71F4BE1A0634370074AB6C /* VRNavigationBar */,
 				AB3DC0721921215D0067DFD3 /* NSLayoutConstraint+VRTools */,
 				AB3DC071192121510067DFD3 /* UINavigationController+VRDropdownMenu */,
-				AB3CA58018B794DD0079964E /* UIViewController+VRShortcutsToAppDelegateAndBackButton */,
 				AB3CA57C18B7917C0079964E /* UIView+FindFirstResponder */,
 				AB3CA57818B790A40079964E /* UIStoryboardSegue+VRDeepDestination */,
 				AB3CA57318B78CC50079964E /* VRGeometryTools */,
@@ -520,6 +511,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB5B604E1A25E9C2001F3C0C /* VRPlatformTest.m in Sources */,
 				AB3CA55218B784750079964E /* VRUIKitToolsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

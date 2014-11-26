@@ -34,10 +34,6 @@ Replaces background image for Normal state with derived image inseted according 
 Categories and classes to use in code
 -------------------------------------
 
-#### UIViewController+VRShortcutsToAppDelegateAndBackButton
-
-Quick access to app's delegate or back button inside any view controller via ```[self appDelegate]``` or ```[self backButtonOfLowerViewController]```.
-
 #### UIColor+VRRGB255
 
 Creates UIColor with integer values of colors in range 0-255.
