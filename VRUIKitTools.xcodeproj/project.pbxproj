@@ -43,6 +43,12 @@
 		AB6DC98F199F533C00BF1BB1 /* VRButtonsGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = AB6DC98E199F533B00BF1BB1 /* VRButtonsGroup.m */; };
 		AB71F4C11A0634540074AB6C /* VRNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = AB71F4C01A0634540074AB6C /* VRNavigationBar.m */; };
 		AB71F4C91A074CE10074AB6C /* VRSegmentedControlWithTags.m in Sources */ = {isa = PBXBuildFile; fileRef = AB71F4C81A074CE10074AB6C /* VRSegmentedControlWithTags.m */; };
+		AB7569D71A25F614006BB8D0 /* VRPlatform.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB5B604C1A25E846001F3C0C /* VRPlatform.h */; };
+		AB7569D81A25F63B006BB8D0 /* VRNavigationBar.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB71F4BF1A0634540074AB6C /* VRNavigationBar.h */; };
+		AB7569D91A25F63B006BB8D0 /* VRNavigationControllerWithBlock.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ABFF48E9191B6DF100EE8A04 /* VRNavigationControllerWithBlock.h */; };
+		AB7569DA1A25F64D006BB8D0 /* VRSegmentedControlWithTags.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB71F4C71A074CE10074AB6C /* VRSegmentedControlWithTags.h */; };
+		AB7569DB1A25F64D006BB8D0 /* VRInsettedLabel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ABFB6E9019A46C4700D1B4B1 /* VRInsettedLabel.h */; };
+		AB7569DC1A25F64D006BB8D0 /* VRButtonsGroup.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB6DC98D199F533B00BF1BB1 /* VRButtonsGroup.h */; };
 		ABFB6E9219A46C4700D1B4B1 /* VRInsettedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFB6E9119A46C4700D1B4B1 /* VRInsettedLabel.m */; };
 		ABFF48EB191B6DF100EE8A04 /* VRNavigationControllerWithBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFF48EA191B6DF100EE8A04 /* VRNavigationControllerWithBlock.m */; };
 /* End PBXBuildFile section */
@@ -64,6 +70,12 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				AB7569DA1A25F64D006BB8D0 /* VRSegmentedControlWithTags.h in CopyFiles */,
+				AB7569DB1A25F64D006BB8D0 /* VRInsettedLabel.h in CopyFiles */,
+				AB7569DC1A25F64D006BB8D0 /* VRButtonsGroup.h in CopyFiles */,
+				AB7569D81A25F63B006BB8D0 /* VRNavigationBar.h in CopyFiles */,
+				AB7569D91A25F63B006BB8D0 /* VRNavigationControllerWithBlock.h in CopyFiles */,
+				AB7569D71A25F614006BB8D0 /* VRPlatform.h in CopyFiles */,
 				AB3DC073192121BA0067DFD3 /* VRImageTiledView.h in CopyFiles */,
 				AB3DC074192121BA0067DFD3 /* VRInsetedBgImageButton.h in CopyFiles */,
 				AB3DC075192121BA0067DFD3 /* NSLayoutConstraint+VRTools.h in CopyFiles */,
