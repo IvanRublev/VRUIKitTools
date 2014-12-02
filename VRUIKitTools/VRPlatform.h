@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-#define IS_IPAD (UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPad)
 #define DEVICE_IOS_VERSION [[UIDevice currentDevice].systemVersion floatValue]
 
 #define IS_IOSx_OR_LATER(X) (((double)(DEVICE_IOS_VERSION)-X) >= -((double)(DEVICE_IOS_VERSION)-X)*DBL_EPSILON)
