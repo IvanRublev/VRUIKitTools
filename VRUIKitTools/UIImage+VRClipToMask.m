@@ -11,10 +11,15 @@
 @implementation UIImage (VRClipToMask)
 - (UIImage *)imageByClippingMaskWithColor:(UIColor*)fillColor
 {
-    return [self imageByClippingMaskWithColor:fillColor backgroundColor:nil];
+    return [self imageByClippingMaskWithColor:fillColor backgroundImage:nil backgroundColor:nil];
 }
 
-- (UIImage *)imageByClippingMaskWithColor:(UIColor*)fillColor backgroundColor:(UIColor*)backgroundColor
+- (UIImage*)imageByClippingMaskWithColor:(UIColor*)fillColor backgroundImage:(UIImage*)backgroundImage
+{
+    return [self imageByClippingMaskWithColor:fillColor backgroundImage:backgroundImage backgroundColor:nil];
+}
+
+- (UIImage *)imageByClippingMaskWithColor:(UIColor*)fillColor backgroundImage:(UIImage*)backgroundImage backgroundColor:(UIColor*)backgroundColor
 {
     if (!self.CGImage) {
         return nil;
@@ -35,6 +40,10 @@
     // Fill background
     CGContextSetFillColorWithColor(context, backgroundColor.CGColor);
     CGContextFillRect(context, maskRectPoints);
+    // Draw background image if exists
+    if (backgroundImage) {
+        [backgroundImage drawInRect:maskRectPoints];
+    }
     // Apply mask
     CGImageRef maskImageRef = CGImageMaskCreate(width, height,
                                                 CGImageGetBitsPerComponent(maskRef),
@@ -55,4 +64,6 @@
     UIImage* orientedImage = [UIImage imageWithCGImage:composedImage.CGImage scale:self.scale orientation:self.imageOrientation];
     return orientedImage;
 }
+
+
 @end

@@ -14,4 +14,6 @@
 @interface UIImage (VRClipToMask)
 - (UIImage*)imageByClippingMaskWithColor:(UIColor*)fillColor;
 - (UIImage*)imageByClippingMaskWithColor:(UIColor*)fillColor backgroundColor:(UIColor*)backgroundColor;
+- (UIImage*)imageByClippingMaskWithColor:(UIColor*)fillColor backgroundImage:(UIImage*)backgroundImage;
+- (UIImage*)imageByClippingMaskWithColor:(UIColor*)fillColor backgroundImage:(UIImage*)backgroundImage backgroundColor:(UIColor*)backgroundColor;
 @end
