@@ -12,12 +12,24 @@
 - (void)setInsetsRect:(CGRect)insetsRect
 {
     _insetsRect = insetsRect;
-    NSArray * states = @[@(UIControlStateNormal), @(UIControlStateHighlighted), @(UIControlStateDisabled), @(UIControlStateSelected)];
-    for (NSNumber * state in states) {
-        NSUInteger stateConst = [state unsignedIntegerValue];
-        UIImage * bgImage = [self backgroundImageForState:stateConst];
-        UIImage * inaetedImage = [bgImage resizableImageWithCapInsets:UIEdgeInsetsMake(_insetsRect.origin.x, _insetsRect.origin.y, _insetsRect.size.width, _insetsRect.size.height)];
-        [self setBackgroundImage:inaetedImage forState:stateConst];
-    }
+    [self setNeedsDisplay];
 }
+
+- (CGRect)backgroundRectForBounds:(CGRect)bounds
+{
+    CGRect rect = [super backgroundRectForBounds:bounds];
+    //insetsRect x=top, y=left, width=bottom, height=right
+    rect = CGRectMake(rect.origin.x+self.insetsRect.origin.y,
+                      rect.origin.y+self.insetsRect.origin.x,
+                      rect.size.width-(self.insetsRect.origin.y+self.insetsRect.size.height),
+                      rect.size.height-(self.insetsRect.origin.x+self.insetsRect.size.width));
+    if (rect.size.width<0.) {
+        rect.size.width = 0.;
+    }
+    if (rect.size.height<0.) {
+        rect.size.height = 0.;
+    }
+    return rect;
+}
+
 @end
