@@ -17,6 +17,7 @@
 #import "VRActionSheetWithBlock.h"
 #import "VRAlertViewWithBlock.h"
 #import "VRNavigationControllerWithBlock.h"
+#import "UIImage+VRClipToMask.h"
 #import "UIImage+VRDerivatives.h"
 #import "UIStoryboardSegue+VRDeepDestination.h"
 #import "UIView+VRFindFirstResponder.h"

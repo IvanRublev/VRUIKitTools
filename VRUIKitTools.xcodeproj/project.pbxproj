@@ -49,6 +49,7 @@
 		AB7569DA1A25F64D006BB8D0 /* VRSegmentedControlWithTags.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB71F4C71A074CE10074AB6C /* VRSegmentedControlWithTags.h */; };
 		AB7569DB1A25F64D006BB8D0 /* VRInsettedLabel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ABFB6E9019A46C4700D1B4B1 /* VRInsettedLabel.h */; };
 		AB7569DC1A25F64D006BB8D0 /* VRButtonsGroup.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB6DC98D199F533B00BF1BB1 /* VRButtonsGroup.h */; };
+		AB7FDF0F1A70E14600FE9378 /* UIImage+VRClipToMask.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7FDF0E1A70E14600FE9378 /* UIImage+VRClipToMask.m */; };
 		ABFB6E9219A46C4700D1B4B1 /* VRInsettedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFB6E9119A46C4700D1B4B1 /* VRInsettedLabel.m */; };
 		ABFF48EB191B6DF100EE8A04 /* VRNavigationControllerWithBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFF48EA191B6DF100EE8A04 /* VRNavigationControllerWithBlock.m */; };
 /* End PBXBuildFile section */
@@ -137,6 +138,8 @@
 		AB71F4C01A0634540074AB6C /* VRNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRNavigationBar.m; sourceTree = "<group>"; };
 		AB71F4C71A074CE10074AB6C /* VRSegmentedControlWithTags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRSegmentedControlWithTags.h; sourceTree = "<group>"; };
 		AB71F4C81A074CE10074AB6C /* VRSegmentedControlWithTags.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRSegmentedControlWithTags.m; sourceTree = "<group>"; };
+		AB7FDF0D1A70E14600FE9378 /* UIImage+VRClipToMask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+VRClipToMask.h"; sourceTree = "<group>"; };
+		AB7FDF0E1A70E14600FE9378 /* UIImage+VRClipToMask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+VRClipToMask.m"; sourceTree = "<group>"; };
 		ABFB6E9019A46C4700D1B4B1 /* VRInsettedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRInsettedLabel.h; sourceTree = "<group>"; };
 		ABFB6E9119A46C4700D1B4B1 /* VRInsettedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRInsettedLabel.m; sourceTree = "<group>"; };
 		ABFF48E9191B6DF100EE8A04 /* VRNavigationControllerWithBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRNavigationControllerWithBlock.h; sourceTree = "<group>"; };
@@ -345,6 +348,7 @@
 				AB3CA57C18B7917C0079964E /* UIView+FindFirstResponder */,
 				AB3CA57818B790A40079964E /* UIStoryboardSegue+VRDeepDestination */,
 				AB3CA57318B78CC50079964E /* VRGeometryTools */,
+				AB7FDF0C1A70E0FF00FE9378 /* UIImage+Masked */,
 				AB3CA57418B78E340079964E /* UIImage+VRDerivatives */,
 				AB3CA56A18B789CB0079964E /* VRAlertViewWithBlock */,
 				AB3CA58418B7957A0079964E /* VRActionSheetWithBlock */,
@@ -398,6 +402,15 @@
 				AB71F4C81A074CE10074AB6C /* VRSegmentedControlWithTags.m */,
 			);
 			name = VRSegmentedControlWithTags;
+			sourceTree = "<group>";
+		};
+		AB7FDF0C1A70E0FF00FE9378 /* UIImage+Masked */ = {
+			isa = PBXGroup;
+			children = (
+				AB7FDF0D1A70E14600FE9378 /* UIImage+VRClipToMask.h */,
+				AB7FDF0E1A70E14600FE9378 /* UIImage+VRClipToMask.m */,
+			);
+			name = "UIImage+Masked";
 			sourceTree = "<group>";
 		};
 		ABFB6E8F19A46C2C00D1B4B1 /* VRInsettedLabel */ = {
@@ -507,6 +520,7 @@
 				AB3CA57218B78C970079964E /* VRGeometryTools.c in Sources */,
 				AB3CA56918B789B40079964E /* VRAlertViewWithBlock.m in Sources */,
 				AB3CA57718B790210079964E /* UIStoryboardSegue+VRDeepDestination.m in Sources */,
+				AB7FDF0F1A70E14600FE9378 /* UIImage+VRClipToMask.m in Sources */,
 				AB3DC06D192120AD0067DFD3 /* NSLayoutConstraint+VRTools.m in Sources */,
 				AB71F4C91A074CE10074AB6C /* VRSegmentedControlWithTags.m in Sources */,
 				AB71F4C11A0634540074AB6C /* VRNavigationBar.m in Sources */,
