@@ -25,7 +25,9 @@ CGSize CGSizeFitInSize(CGSize whatSize, CGSize whereSize);
 CGSize CGSizeSwap(CGSize whatSize);
 
 CGFloat CGPointDistanceToPoint(CGPoint p1, CGPoint p2);
+CGFloat CGPointDistanceToLine(CGPoint p, CGPoint lineStart, CGPoint lineEnd);
 CGPoint CGPointCenterOfRect(CGRect rect);
+CGPoint CGPointCenterPointBetweenPoints(CGPoint p1, CGPoint p2);
 
 bool CGLineIntersectsLine(CGPoint line1s, CGPoint line1e, CGPoint line2s, CGPoint line2e);
 

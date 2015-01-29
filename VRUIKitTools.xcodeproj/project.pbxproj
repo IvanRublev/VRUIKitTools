@@ -50,6 +50,7 @@
 		AB7569DB1A25F64D006BB8D0 /* VRInsettedLabel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ABFB6E9019A46C4700D1B4B1 /* VRInsettedLabel.h */; };
 		AB7569DC1A25F64D006BB8D0 /* VRButtonsGroup.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB6DC98D199F533B00BF1BB1 /* VRButtonsGroup.h */; };
 		AB7FDF0F1A70E14600FE9378 /* UIImage+VRClipToMask.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7FDF0E1A70E14600FE9378 /* UIImage+VRClipToMask.m */; };
+		ABA7608A1A7246BB006C42B7 /* VRGeometryToolsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA760891A7246BB006C42B7 /* VRGeometryToolsTest.m */; };
 		ABFB6E9219A46C4700D1B4B1 /* VRInsettedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFB6E9119A46C4700D1B4B1 /* VRInsettedLabel.m */; };
 		ABFF48EB191B6DF100EE8A04 /* VRNavigationControllerWithBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFF48EA191B6DF100EE8A04 /* VRNavigationControllerWithBlock.m */; };
 /* End PBXBuildFile section */
@@ -140,6 +141,7 @@
 		AB71F4C81A074CE10074AB6C /* VRSegmentedControlWithTags.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRSegmentedControlWithTags.m; sourceTree = "<group>"; };
 		AB7FDF0D1A70E14600FE9378 /* UIImage+VRClipToMask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+VRClipToMask.h"; sourceTree = "<group>"; };
 		AB7FDF0E1A70E14600FE9378 /* UIImage+VRClipToMask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+VRClipToMask.m"; sourceTree = "<group>"; };
+		ABA760891A7246BB006C42B7 /* VRGeometryToolsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRGeometryToolsTest.m; sourceTree = "<group>"; };
 		ABFB6E9019A46C4700D1B4B1 /* VRInsettedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRInsettedLabel.h; sourceTree = "<group>"; };
 		ABFB6E9119A46C4700D1B4B1 /* VRInsettedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRInsettedLabel.m; sourceTree = "<group>"; };
 		ABFF48E9191B6DF100EE8A04 /* VRNavigationControllerWithBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRNavigationControllerWithBlock.h; sourceTree = "<group>"; };
@@ -252,6 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				AB3CA55118B784750079964E /* VRUIKitToolsTests.m */,
+				ABA760891A7246BB006C42B7 /* VRGeometryToolsTest.m */,
 				AB5B604D1A25E9C2001F3C0C /* VRPlatformTest.m */,
 				AB3CA54C18B784750079964E /* Supporting Files */,
 			);
@@ -538,6 +541,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB5B604E1A25E9C2001F3C0C /* VRPlatformTest.m in Sources */,
+				ABA7608A1A7246BB006C42B7 /* VRGeometryToolsTest.m in Sources */,
 				AB3CA55218B784750079964E /* VRUIKitToolsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

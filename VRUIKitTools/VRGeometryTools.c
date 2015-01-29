@@ -75,9 +75,25 @@ CGFloat CGPointDistanceToPoint(CGPoint p1, CGPoint p2)
     return sqrtf(powf(p1.x - p2.x, 2.0f)+powf(p1.y - p2.y, 2.0f));
 }
 
+CGFloat CGPointDistanceToLine(CGPoint p, CGPoint lineStart, CGPoint lineEnd)
+{
+    return
+    fabsl((lineEnd.x-lineStart.x)*(lineStart.y-p.y)-(lineStart.x-p.x)*(lineEnd.y-lineStart.y)) /
+    sqrtl(powl(lineEnd.x-lineStart.x, 2.)+powl(lineEnd.y-lineStart.y, 2.));
+}
+
 CGPoint CGPointCenterOfRect(CGRect rect)
 {
     return CGPointMake(rect.origin.x + rect.size.width / 2.0f, rect.origin.y + rect.size.height / 2.0f);
+}
+
+CGPoint CGPointCenterPointBetweenPoints(CGPoint p1, CGPoint p2)
+{
+    CGFloat minX = fmin(p1.x, p2.x);
+    CGFloat maxX = fmax(p1.x, p2.x);
+    CGFloat minY = fmin(p1.y, p2.y);
+    CGFloat maxY = fmax(p1.y, p2.y);
+    return CGPointMake(minX+(maxX-minX)/2., minY+(maxY-minY)/2.);
 }
 
 bool CGLineIntersectsLine(CGPoint line1s, CGPoint line1e, CGPoint line2s, CGPoint line2e)
