@@ -14,6 +14,11 @@
     return [self imageByClippingMaskWithColor:fillColor backgroundImage:nil backgroundColor:nil];
 }
 
+- (UIImage*)imageByClippingMaskWithColor:(UIColor*)fillColor backgroundColor:(UIColor*)backgroundColor
+{
+    return [self imageByClippingMaskWithColor:fillColor backgroundImage:nil backgroundColor:backgroundColor];
+}
+
 - (UIImage*)imageByClippingMaskWithColor:(UIColor*)fillColor backgroundImage:(UIImage*)backgroundImage
 {
     return [self imageByClippingMaskWithColor:fillColor backgroundImage:backgroundImage backgroundColor:nil];
