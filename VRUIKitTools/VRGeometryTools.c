@@ -54,6 +54,11 @@ CGRect CGRectNewXandY(CGRect inputRect, CGFloat newX, CGFloat newY)
     return CGRectMake(newX, newY, inputRect.size.width, inputRect.size.height);
 }
 
+CGRect CGRectSwapAxis(CGRect inputRect)
+{
+    return CGRectMake(inputRect.origin.y, inputRect.origin.x, inputRect.size.height, inputRect.size.width);
+}
+
 CGSize CGSizeFitInSize(CGSize whatSize, CGSize whereSize)
 {
     CGSize result = CGSizeZero;

@@ -20,6 +20,7 @@ CGRect CGRectNewY(CGRect inputRect, CGFloat newY);
 CGRect CGRectNewWidth(CGRect inputRect, CGFloat newWidth);
 CGRect CGRectNewHeight(CGRect inputRect, CGFloat newHeight);
 CGRect CGRectNewXandY(CGRect inputRect, CGFloat newX, CGFloat newY);
+CGRect CGRectSwapAxis(CGRect inputRect);
 
 CGSize CGSizeFitInSize(CGSize whatSize, CGSize whereSize);
 CGSize CGSizeSwap(CGSize whatSize);
