@@ -34,4 +34,5 @@ NSString * NSStringFromUIImageOrientation(UIImageOrientation imageOrientation);
 - (UIImage *)imageWithDots:(NSArray *)arrayOfPoints color:(UIColor *)color radiusesW:(NSArray *)radiusesW radiusesH:(NSArray *)radiusesH;
 - (UIImage *)imageWithRects:(NSArray *)rects color:(UIColor *)color;
 - (UIImage *)putImage:(UIImage *)putImage at:(CGPoint)point;
+- (UIImage*)imageWithMargins:(UIEdgeInsets)margins;
 @end

@@ -819,4 +819,23 @@ void scaledImageReleaseCallocatedData (void *info, const void *data, size_t size
     return processedJoinedImage;
 }
 
+- (UIImage*)imageWithMargins:(UIEdgeInsets)margins
+{
+    if (!self) {
+        return nil;
+    }
+    if (UIEdgeInsetsEqualToEdgeInsets(margins, UIEdgeInsetsZero)) {
+        return self;
+    }
+    CGSize newSize = CGSizeMake(self.size.width+margins.left+margins.right, self.size.height+margins.top+margins.bottom);
+    CGRect rect = CGRectMake(margins.left, margins.top, self.size.width, self.size.height);
+    
+    UIGraphicsBeginImageContextWithOptions(newSize, NO, 0.0);
+    [self drawInRect:rect];
+    UIImage *result =  UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return result;
+}
+
 @end
