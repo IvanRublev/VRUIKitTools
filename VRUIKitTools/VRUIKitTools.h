@@ -22,6 +22,7 @@
 #import "UIStoryboardSegue+VRDeepDestination.h"
 #import "UIView+VRFindFirstResponder.h"
 #import "UINavigationController+VRDropdownMenu.h"
+#import "VRTableSearchBar.h"
 
 #import "VRImageTiledView.h"
 #import "VRInsetedBgImageButton.h"
