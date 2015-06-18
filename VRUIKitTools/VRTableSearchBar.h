@@ -13,8 +13,9 @@ typedef void(^VRTableSearchBarAnimationBlock)(void);
 
 @protocol VRTableSearchBarDelegate <NSObject>
 @optional
-- (VRTableSearchBarAnimationBlock)tableSearchBarWillBecomeActive:(VRTableSearchBar*)searchBar animated:(BOOL)animated;
-- (VRTableSearchBarAnimationBlock)tableSearchBarWillResignActive:(VRTableSearchBar*)searchBar animated:(BOOL)animated;
+- (VRTableSearchBarAnimationBlock)tableSearchBarWillStartEditing:(VRTableSearchBar*)searchBar animated:(BOOL)animated;
+- (void)tableSearchBar:(VRTableSearchBar*)searchBar textDidChange:(NSString*)searchText;
+- (VRTableSearchBarAnimationBlock)tableSearchBarWillEndEditing:(VRTableSearchBar*)searchBar animated:(BOOL)animated;
 @end
 
 @interface VRTableSearchBar : UISearchBar
@@ -23,5 +24,6 @@ typedef void(^VRTableSearchBarAnimationBlock)(void);
 @property (nonatomic, assign) IBInspectable BOOL addCancelButtonOnEditing;
 @property (nonatomic, assign) IBInspectable BOOL shouldKeepTextOnCancelButtonPressed;
 @property (nonatomic, assign) IBInspectable BOOL addFadeViewWhenTextIsEmpty;
+@property (nonatomic, readwrite) UIColor* fadeViewColor;
 @property (nonatomic, assign) BOOL active;
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB08DE4A1B329FE10012D0F8 /* VRTouchableView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB08DE491B329FE10012D0F8 /* VRTouchableView.m */; };
 		AB0A046118BEEFC300A377B4 /* VRImageTiledView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0A046018BEEFC300A377B4 /* VRImageTiledView.m */; };
 		AB0A046618BEF1CD00A377B4 /* VRInsetedBgImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0A046518BEF1CD00A377B4 /* VRInsetedBgImageButton.m */; };
 		AB3CA53618B784750079964E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3CA53518B784750079964E /* Foundation.framework */; };
@@ -98,6 +99,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AB08DE481B329FE10012D0F8 /* VRTouchableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRTouchableView.h; sourceTree = "<group>"; };
+		AB08DE491B329FE10012D0F8 /* VRTouchableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRTouchableView.m; sourceTree = "<group>"; };
 		AB0A045F18BEEFC300A377B4 /* VRImageTiledView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRImageTiledView.h; sourceTree = "<group>"; };
 		AB0A046018BEEFC300A377B4 /* VRImageTiledView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRImageTiledView.m; sourceTree = "<group>"; };
 		AB0A046418BEF1CD00A377B4 /* VRInsetedBgImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRInsetedBgImageButton.h; sourceTree = "<group>"; };
@@ -174,6 +177,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB08DE4B1B329FE90012D0F8 /* VRTouchableView */ = {
+			isa = PBXGroup;
+			children = (
+				AB08DE481B329FE10012D0F8 /* VRTouchableView.h */,
+				AB08DE491B329FE10012D0F8 /* VRTouchableView.m */,
+			);
+			name = VRTouchableView;
+			sourceTree = "<group>";
+		};
 		AB0A046218BEF11300A377B4 /* VRImageTiledView */ = {
 			isa = PBXGroup;
 			children = (
@@ -349,6 +361,7 @@
 		AB3CA58918B797300079964E /* Classes & Categories */ = {
 			isa = PBXGroup;
 			children = (
+				AB08DE4B1B329FE90012D0F8 /* VRTouchableView */,
 				AB71F4BE1A0634370074AB6C /* VRNavigationBar */,
 				AB3DC0721921215D0067DFD3 /* NSLayoutConstraint+VRTools */,
 				AB3DC071192121510067DFD3 /* UINavigationController+VRDropdownMenu */,
@@ -534,6 +547,7 @@
 				ABFF48EB191B6DF100EE8A04 /* VRNavigationControllerWithBlock.m in Sources */,
 				ABFB6E9219A46C4700D1B4B1 /* VRInsettedLabel.m in Sources */,
 				AB3CA57218B78C970079964E /* VRGeometryTools.c in Sources */,
+				AB08DE4A1B329FE10012D0F8 /* VRTouchableView.m in Sources */,
 				AB3CA56918B789B40079964E /* VRAlertViewWithBlock.m in Sources */,
 				AB3CA57718B790210079964E /* UIStoryboardSegue+VRDeepDestination.m in Sources */,
 				AB7FDF0F1A70E14600FE9378 /* UIImage+VRClipToMask.m in Sources */,

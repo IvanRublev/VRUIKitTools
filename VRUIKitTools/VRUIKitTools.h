@@ -23,6 +23,7 @@
 #import "UIView+VRFindFirstResponder.h"
 #import "UINavigationController+VRDropdownMenu.h"
 #import "VRTableSearchBar.h"
+#import "VRTouchableView.h"
 
 #import "VRImageTiledView.h"
 #import "VRInsetedBgImageButton.h"

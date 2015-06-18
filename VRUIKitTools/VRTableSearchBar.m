@@ -7,12 +7,13 @@
 //
 
 #import "VRTableSearchBar.h"
+#import "VRTouchableView.h"
 
-@interface VRTableSearchBar () <UISearchBarDelegate> {
+@interface VRTableSearchBar () <UISearchBarDelegate, VRTouchableViewDelegate> {
     NSUInteger _fadeViewTransitionsCount;
 }
 @property (nonatomic, weak) id<UISearchBarDelegate> realDelegate;
-@property (nonatomic, readwrite) UIView* fadeView;
+@property (nonatomic, readwrite) VRTouchableView* fadeView;
 @property (nonatomic, assign) BOOL fadeViewVisible;
 @property (nonatomic, assign) BOOL wasCanceled;
 @end
@@ -36,6 +37,7 @@
 
 - (void)commonInit {
     [super setDelegate:self];
+    _fadeViewColor = [[UIColor blackColor] colorWithAlphaComponent:0.3];
 }
 
 
@@ -64,12 +66,7 @@
     if ([self.realDelegate respondsToSelector:@selector(searchBarCancelButtonClicked:)]) {
         [self.realDelegate searchBarCancelButtonClicked:searchBar];
     }
-    self.wasCanceled = YES;
-    if ([self isFirstResponder]) {
-        [self resignFirstResponder];
-    } else { // is not first responder
-        [self setActive:NO animated:YES];
-    }
+    [self cancelSearch];
 }
 
 #pragma mark Editing text
@@ -141,12 +138,38 @@
     if ([self.realDelegate respondsToSelector:@selector(searchBar:textDidChange:)]) {
         [self.realDelegate searchBar:self textDidChange:searchText];
     }
+    if ([self.tableSearchBarDelegate respondsToSelector:@selector(tableSearchBar:textDidChange:)]) {
+        [self.tableSearchBarDelegate tableSearchBar:self textDidChange:searchText];
+    }
 }
 
 
 #pragma mark -
-#pragma mark Active
-- (void)setActive:(BOOL)active {
+#pragma mark Handling subview touches
+- (void)touchableViewWasTouched:(VRTouchableView*)view {
+    if (view == self.fadeView) {
+        [self cancelSearch];
+    }
+}
+
+
+#pragma mark -
+#pragma mark Activate & canceling
+- (void)cancelSearch {
+    self.wasCanceled = YES;
+    if ([self isFirstResponder]) { // resign first responder to ask delegate if really need to finish editing text and deactivete
+        [self resignFirstResponder];
+    } else { // is not first responder
+        [self setActive:NO animated:YES];
+    }
+}
+
+- (void)setActive:(BOOL)active { // called from outside
+    if (active) {
+        [self becomeFirstResponder];
+    } else {
+        [self resignFirstResponder];
+    }
     [self setActive:active animated:NO];
 }
 
@@ -160,12 +183,12 @@
         // Obtain alongside animation from delegate
         VRTableSearchBarAnimationBlock alongsideAnimation = nil;
         if (active) {
-            if ([self.tableSearchBarDelegate respondsToSelector:@selector(tableSearchBarWillBecomeActive:animated:)]) {
-                alongsideAnimation = [self.tableSearchBarDelegate tableSearchBarWillBecomeActive:self animated:animated];
+            if ([self.tableSearchBarDelegate respondsToSelector:@selector(tableSearchBarWillStartEditing:animated:)]) {
+                alongsideAnimation = [self.tableSearchBarDelegate tableSearchBarWillStartEditing:self animated:animated];
             }
         } else { // deactivation
-            if ([self.tableSearchBarDelegate respondsToSelector:@selector(tableSearchBarWillResignActive:animated:)]) {
-                alongsideAnimation = [self.tableSearchBarDelegate tableSearchBarWillResignActive:self animated:animated];
+            if ([self.tableSearchBarDelegate respondsToSelector:@selector(tableSearchBarWillEndEditing:animated:)]) {
+                alongsideAnimation = [self.tableSearchBarDelegate tableSearchBarWillEndEditing:self animated:animated];
             }
         }
         // Prepeare self animations
@@ -209,13 +232,20 @@
 
 #pragma mark -
 #pragma mark Fade view
-- (UIView*)fadeView {
+- (VRTouchableView*)fadeView {
     if (!_fadeView && self.superview) {
-        _fadeView = [[UIView alloc] initWithFrame:self.superview.bounds];
-        _fadeView.backgroundColor = [UIColor blackColor];
+        _fadeView = [[VRTouchableView alloc] initWithFrame:self.superview.bounds];
+        _fadeView.delegate = self;
+        _fadeView.backgroundColor = self.fadeViewColor;
         _fadeView.alpha = 1.0;
+        _fadeView.autoresizingMask =  UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     }
     return _fadeView;
+}
+
+- (void)setFadeViewColor:(UIColor*)fadeViewColor {
+    _fadeViewColor = fadeViewColor;
+    self.fadeView.backgroundColor = fadeViewColor;
 }
 
 - (void)setFadeViewVisible:(BOOL)fadeViewVisible {
@@ -254,7 +284,7 @@
         }
         [UIView animateWithDuration:0 animations:^{
             if (fadeViewVisible) {
-                self.fadeView.alpha = 0.3;
+                self.fadeView.alpha = 1.0;
             } else { // not fadeViewVisible
                 self.fadeView.alpha = 0.0;
             }
