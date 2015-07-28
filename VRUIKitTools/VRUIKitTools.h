@@ -21,6 +21,7 @@
 #import "UIImage+VRDerivatives.h"
 #import "UIStoryboardSegue+VRDeepDestination.h"
 #import "UIView+VRFindFirstResponder.h"
+#import "UIView+enumerateSubviews.h"
 #import "UINavigationController+VRDropdownMenu.h"
 #import "VRTableSearchBar.h"
 #import "VRTouchableView.h"

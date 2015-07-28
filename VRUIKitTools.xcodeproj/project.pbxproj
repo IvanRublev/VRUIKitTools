@@ -54,6 +54,7 @@
 		AB7FDF0F1A70E14600FE9378 /* UIImage+VRClipToMask.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7FDF0E1A70E14600FE9378 /* UIImage+VRClipToMask.m */; };
 		ABA7608A1A7246BB006C42B7 /* VRGeometryToolsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA760891A7246BB006C42B7 /* VRGeometryToolsTest.m */; };
 		ABFB6E9219A46C4700D1B4B1 /* VRInsettedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFB6E9119A46C4700D1B4B1 /* VRInsettedLabel.m */; };
+		ABFE9FBA1B67DEF900D07F5E /* UIView+enumerateSubviews.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFE9FB91B67DEF900D07F5E /* UIView+enumerateSubviews.m */; };
 		ABFF48EB191B6DF100EE8A04 /* VRNavigationControllerWithBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFF48EA191B6DF100EE8A04 /* VRNavigationControllerWithBlock.m */; };
 /* End PBXBuildFile section */
 
@@ -150,6 +151,8 @@
 		ABA760891A7246BB006C42B7 /* VRGeometryToolsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRGeometryToolsTest.m; sourceTree = "<group>"; };
 		ABFB6E9019A46C4700D1B4B1 /* VRInsettedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRInsettedLabel.h; sourceTree = "<group>"; };
 		ABFB6E9119A46C4700D1B4B1 /* VRInsettedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRInsettedLabel.m; sourceTree = "<group>"; };
+		ABFE9FB81B67DEF900D07F5E /* UIView+enumerateSubviews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+enumerateSubviews.h"; sourceTree = "<group>"; };
+		ABFE9FB91B67DEF900D07F5E /* UIView+enumerateSubviews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+enumerateSubviews.m"; sourceTree = "<group>"; };
 		ABFF48E9191B6DF100EE8A04 /* VRNavigationControllerWithBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRNavigationControllerWithBlock.h; sourceTree = "<group>"; };
 		ABFF48EA191B6DF100EE8A04 /* VRNavigationControllerWithBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRNavigationControllerWithBlock.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -365,6 +368,7 @@
 				AB71F4BE1A0634370074AB6C /* VRNavigationBar */,
 				AB3DC0721921215D0067DFD3 /* NSLayoutConstraint+VRTools */,
 				AB3DC071192121510067DFD3 /* UINavigationController+VRDropdownMenu */,
+				ABFE9FB71B67DEB500D07F5E /* UIVIew+enumerateSubviews */,
 				AB3CA57C18B7917C0079964E /* UIView+FindFirstResponder */,
 				AB3CA57818B790A40079964E /* UIStoryboardSegue+VRDeepDestination */,
 				AB3CA57318B78CC50079964E /* VRGeometryTools */,
@@ -449,6 +453,15 @@
 				ABFB6E9119A46C4700D1B4B1 /* VRInsettedLabel.m */,
 			);
 			name = VRInsettedLabel;
+			sourceTree = "<group>";
+		};
+		ABFE9FB71B67DEB500D07F5E /* UIVIew+enumerateSubviews */ = {
+			isa = PBXGroup;
+			children = (
+				ABFE9FB81B67DEF900D07F5E /* UIView+enumerateSubviews.h */,
+				ABFE9FB91B67DEF900D07F5E /* UIView+enumerateSubviews.m */,
+			);
+			name = "UIVIew+enumerateSubviews";
 			sourceTree = "<group>";
 		};
 		ABFF48EC191B6E0D00EE8A04 /* VRNavigationControllerWithBlock */ = {
@@ -547,6 +560,7 @@
 				ABFF48EB191B6DF100EE8A04 /* VRNavigationControllerWithBlock.m in Sources */,
 				ABFB6E9219A46C4700D1B4B1 /* VRInsettedLabel.m in Sources */,
 				AB3CA57218B78C970079964E /* VRGeometryTools.c in Sources */,
+				ABFE9FBA1B67DEF900D07F5E /* UIView+enumerateSubviews.m in Sources */,
 				AB08DE4A1B329FE10012D0F8 /* VRTouchableView.m in Sources */,
 				AB3CA56918B789B40079964E /* VRAlertViewWithBlock.m in Sources */,
 				AB3CA57718B790210079964E /* UIStoryboardSegue+VRDeepDestination.m in Sources */,
