@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-#import "VRPlatform.h"
 #import "VRGeometryTools.h"
 #import "UIColor+VRRGB255.h"
 #import "NSLayoutConstraint+VRTools.h"
